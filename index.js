@@ -17,11 +17,20 @@ function playGame(){
             console.log(`Draw - ${playerScore} : ${computerScore}`);
         }else if (playerChoice === "scissors" && computerChoice === "paper") {
             playerScore += 1;
-            console.log(`You won! ${playerScore} : ${computerScore}`)
+            console.log(`You won! ${playerScore} : ${computerScore}`);
         }else if (playerChoice === "paper" && computerChoice === "rock") {
             playerScore +=1;
-            console.log(`You won! ${playerScore} : ${computerScore}`)
+            console.log(`You won! ${playerScore} : ${computerScore}`);
+        }else{
+            computerScore += 1;
+            console.log(`You lost ${playerScore} : ${computerScore}`);
         }
     
+        if (playerScore === 3){
+            console.log("Congratulations you won!")
+            }else{
+                console.log("The computer won... better luck next time.")
+            }
+        }
     }
 }
