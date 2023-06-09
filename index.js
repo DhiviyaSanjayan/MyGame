@@ -4,14 +4,15 @@ let options = ["rock", "paper", "scissors"];
 let randomNum = Math.floor(Math.random() * 3) + 1;
 return options[randomNum];
 
-let playerScore = 0:
+let playerScore = 0;
 let computerScore = 0;
 
-function playGame(){
+function playGame() {
     // while??
     while (playerScore < 3 && computerScore < 3) {
         let playerChoice = "rock";
         let computerChoice = 
+    }
         // conditional
         if (playerChoice === computerSelection) {
             console.log(`Draw - ${playerScore} : ${computerScore}`);
@@ -32,5 +33,4 @@ function playGame(){
                 console.log("The computer won... better luck next time.")
             }
         }
-    }
-}
+    
