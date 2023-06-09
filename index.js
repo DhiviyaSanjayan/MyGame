@@ -1,7 +1,7 @@
 // 3 options -"rock", "paper" and "scissors"
 
 let options = ["rock", "paper", "scissors"];
-let randomNum = Math.floor(Math.random() * options.length);
+let randomNum = Math.floor(Math.random() * 3) + 1;
 return options[randomNum];
 
 let playerScore = 0:
@@ -15,7 +15,13 @@ function playGame(){
         // conditional
         if (playerChoice === computerSelection) {
             console.log(`Draw - ${playerScore} : ${computerScore}`);
+        }else if (playerChoice === "scissors" && computerChoice === "paper") {
+            playerScore += 1;
+            console.log(`You won! ${playerScore} : ${computerScore}`)
+        }else if (playerChoice === "paper" && computerChoice === "rock") {
+            playerScore +=1;
+            console.log(`You won! ${playerScore} : ${computerScore}`)
         }
-        
+    
     }
 }
