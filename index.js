@@ -12,5 +12,10 @@ function playGame(){
     while (playerScore < 3 && computerScore < 3) {
         let playerChoice = "rock";
         let computerChoice = 
+        // conditional
+        if (playerChoice === computerSelection) {
+            console.log(`Draw - ${playerScore} : ${computerScore}`);
+        }
+        
     }
 }
